@@ -1,10 +1,10 @@
 print("Olá, esse é um programa que calculará a o seu salario mensal")
 
-salario_horas = input("Digite aqui o quanto recebe por hora: ")
-salario_horas = float(salario_horas)
+salario_horas = float(input("Digite aqui o quanto recebe por hora: "))
 
-horas_trabalhadas = input("Digite aqui quantas horas trabalhou esse mês: ")
-horas_trabalhadas = float(horas_trabalhadas)
+
+horas_trabalhadas = float(input("Digite aqui quantas horas trabalhou esse mês: "))
+
 
 salario_bruto = salario_horas * horas_trabalhadas
 
@@ -25,7 +25,7 @@ elif salario_bruto in range(1501, 2500):
 else:
     salario_bruto = salario_bruto * 0.2
 
-print(" Salário Bruto: ({:.2f} * {})        : R$ {:.2f}".format(
+print(" Salário Bruto: ({:.2f} * {}): R$ {:.2f}".format(
     salario_horas, horas_trabalhadas, salario_liquido))
 print("(-) IR (5%)                     : R$   {:.2f}".format(imposto_renda))
 print("(-) INSS ( 10%)                     : R$   {:.2f}".format(taxa_inss))
