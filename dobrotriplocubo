@@ -1,0 +1,22 @@
+"""
+Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
+a- o produto do dobro do primeiro com metade do segundo .
+b- a soma do triplo do primeiro com o terceiro.
+c- o terceiro elevado ao cubo.
+"""
+
+from cmath import sqrt
+
+
+numero1 = int(input('Digite um número inteiro:\n'))
+numero2 = int(input('Digite mais um número inteiro:\n'))
+numero3 = float(input('Digite um número real(decimais):\n'))
+
+letra_a = (numero1*2) * (numero2/2)
+print(f'Resposta da letra A: {letra_a}')
+
+letra_b = (3*numero1) + numero3
+print(f'Resposta da letra B: {letra_b}')
+
+letra_c = sqrt(numero3)
+print(f'Resposta da letra C: {letra_c}')
